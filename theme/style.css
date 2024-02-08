@@ -16,10 +16,12 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
 */
 :root {
   --couleur-arriere-entete: #6d88ff9a;
-  --couleur-arrire-accueil: #fefefe;
+  --couleur-arriere-accueil: #711eb4af;
   --couleur-arriere-evenement: #ff7272;
-  --couleur-arriere-galerie: #df77ffd0;
+  --couleur-arriere-galerie: #0c5bb4d0;
   --couleur-arriere-footer: #8affa4;
+  --transparence-h1: .5;
+  --transparence-section: .1;
 }
 
 * {
@@ -41,9 +43,15 @@ body {
 
 .global > section,
 .global > header,
-.gloabl > footer {
+.global > footer {
   flex: 0 1 900px;
-  border: 1px solid #aaa;
+  border: 5px groove #3d3d3d;
+  padding: 3rem 1rem;
+  background-color: rgba(0, 0, 0, var(--transparence-section));
+}
+
+#entete, #footer {
+  min-height: 20vh;
 }
 
 #entete {
@@ -68,16 +76,22 @@ body {
 
 h1 {
   font-size: clamp(1.25rem, -2.656rem + 12.5vw, 4.375rem);
-  font-weight: 700;
+  color: rgba(61, 61, 61, var(--transparence-h1));
+  font-weight: 600;
   font-style: normal;
 }
 
 h2 {
-  font-size: clamp(1rem, -1.295rem + 5.333vw, 3rem);
+  font-size: clamp(1rem, -1.292rem + 7.333vw, 3.75rem);
+  font-weight: 500;
+  font-style: normal;
+  color: rgba(3, 1, 1, 0.4);
 }
 
 h3 {
   font-size: clamp(1rem, -0.875rem + 4.333vw, 2.25rem);
+  font-size: normal;
+  font-weight: 500;
 }
 
 h4 {

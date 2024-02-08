@@ -3,16 +3,25 @@
 
 h1{
     font-size: clamp(1.25rem, -2.656rem + 12.5vw, 4.375rem);
-    font-weight: 700;
+    // color: rgba(255, 255, 255, .5);
+    // color: rgba(0, 0, 0, .5);
+    color: rgba(#3d3d3d , var(--transparence-h1));
+    font-weight: 600;
     font-style: normal;
+
 }
 
 h2{
-    font-size: clamp(1rem, -1.295rem + 5.333vw, 3rem);
+    font-size: clamp(1rem, -1.292rem + 7.333vw, 3.75rem);
+    font-weight: 500;
+    font-style: normal;
+    color: rgba(#030101, .4);
 }
 
 h3{
     font-size: clamp(1rem, -0.875rem + 4.333vw, 2.25rem);
+    font-size: normal;
+    font-weight: 500;
 }
 
 h4{
