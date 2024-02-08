@@ -22,6 +22,9 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
   --couleur-arriere-footer: #8affa4;
   --transparence-h1: .5;
   --transparence-section: .1;
+  --couleur-h4: #333;
+  --couleur-h5: #555;
+  --couleur-h6: #777;
 }
 
 * {
@@ -92,16 +95,28 @@ h3 {
   font-size: clamp(1rem, -0.875rem + 4.333vw, 2.25rem);
   font-size: normal;
   font-weight: 500;
+  font-family: "Protest Riot", sans-serif;
 }
 
 h4 {
   font-size: clamp(1rem, -0.875rem + 3.333vw, 1.75rem);
+  font-weight: 500;
+  color: var(couleur-h4);
+  margin-bottom: 10px;
 }
 
 h5 {
   font-size: clamp(1rem, -0.875rem + 2.333vw, 1.25rem);
+  font-weight: 500;
+  color: var(--couleur-h5);
+  margin-bottom: 8px;
+  font-family: "Spicy Rice", serif;
 }
 
 h6 {
   font-size: clamp(1rem, -0.875rem + 1.333vw, 1rem);
+  font-weight: 500;
+  color: var(--couleur-h6);
+  margin-bottom: 6px;
+  font-family: "Spicy Rice", serif;
 }/*# sourceMappingURL=style.css.map */
