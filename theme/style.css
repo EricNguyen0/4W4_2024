@@ -15,11 +15,11 @@ Text Domain: Theme Eric
 https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
 */
 :root {
-  --couleur-arriere-entete: #3757e9;
+  --couleur-arriere-entete: #6d88ff9a;
   --couleur-arrire-accueil: #fefefe;
-  --couleur-arriere-evenement: #850000;
-  --couleur-arriere-galerie: #f5f5f5;
-  --couleur-arriere-footer: #333;
+  --couleur-arriere-evenement: #ff7272;
+  --couleur-arriere-galerie: #df77ffd0;
+  --couleur-arriere-footer: #8affa4;
 }
 
 * {
@@ -30,16 +30,19 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
 body {
   display: flex;
   flex-direction: column;
+  font-family: "prompt", sans-serif;
 }
 
 .global {
-  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  min-height: 40vh;
 }
 
 .global > section,
 .global > header,
 .gloabl > footer {
-  flex: 0 1 1100px;
+  flex: 0 1 900px;
   border: 1px solid #aaa;
 }
 
@@ -64,11 +67,13 @@ body {
 }
 
 h1 {
-  font-size: clamp(1rem, -1.292rem + 7.333vw, 3.75rem);
+  font-size: clamp(1.25rem, -2.656rem + 12.5vw, 4.375rem);
+  font-weight: 700;
+  font-style: normal;
 }
 
 h2 {
-  font-size: clamp(1rem, -0.875rem + 5.333vw, 3rem);
+  font-size: clamp(1rem, -1.295rem + 5.333vw, 3rem);
 }
 
 h3 {
