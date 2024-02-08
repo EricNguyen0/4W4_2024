@@ -22,7 +22,12 @@
     border: 5px groove #3d3d3d;
     padding : 3rem 1rem;
     background-color: rgba(0,0,0,var(--transparence-section));
+    text-align: center;
   }
+  .global > section{
+    min-width: 80%;
+  }
+
   #entete, #footer {
     min-height: 20vh;
   }
