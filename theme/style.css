@@ -15,16 +15,24 @@ Text Domain: Theme Eric
 https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
 */
 :root {
-  --couleur-arriere-entete: #6d88ff9a;
-  --couleur-arriere-accueil: #711eb4af;
-  --couleur-arriere-evenement: #ff7272;
-  --couleur-arriere-galerie: #0c5bb4d0;
-  --couleur-arriere-footer: #8affa4;
-  --transparence-h1: .5;
-  --transparence-section: .1;
-  --couleur-h4: #333;
-  --couleur-h5: #555;
-  --couleur-h6: #777;
+  --u1: 75;
+  --u2: calc(var(--u1) + 120);
+  --u3: calc(var(--u2) - 30);
+  --u4: calc(var(--u1) + 30);
+  --s-arriere: 100%;
+  --s-avant: 90%;
+  --l-arriere: 30%;
+  --l-avant: 42%;
+  --couleur-arriere-entete: hsl(var(--u1), var(--s-arriere), var(--l-arriere));
+  --couleur-arriere-accueil: hsl(var(--u2), var(--s-arriere), var(--l-arriere)) ;
+  --couleur-arriere-evenement: hsl(var(--u3), var(--s-arriere), var(--l-arriere));
+  --couleur-arriere-galerie: hsl(var(--u4), var(--s-arriere), var(--l-arriere));
+  --couleur-arriere-footer: hsl(var(--u1), var(--s-arriere), var(--l-arriere));
+  --couleur-avant-entete: hsl(var(--u1), var(--s-avant), var(--l-avant));
+  --couleur-avant-accueil: hsl(var(--u2), var(--s-avant), var(--l-avant));
+  --couleur-avant-evenement: hsl(var(--u3), var(--s-avant), var(--l-avant));
+  --couleur-avant-galerie: hsl(var(--u4), var(--s-avant), var(--l-avant));
+  --couleur-avant-footer: hsl(var(--u1), var(--s-avant), var(--l-avant));
 }
 
 * {
@@ -64,27 +72,31 @@ body {
 
 #entete {
   background-color: var(--couleur-arriere-entete);
+  color: var(--couleur-avant-entete);
 }
 
 #accueil {
   background-color: var(--couleur-arriere-accueil);
+  color: var(--couleur-avant-accueil);
 }
 
 #evenement {
   background-color: var(--couleur-arriere-evenement);
+  color: var(--couleur-avant-evenement);
 }
 
 #galerie {
   background-color: var(--couleur-arriere-galerie);
+  color: var(--couleur-avant-galerie);
 }
 
 #footer {
   background-color: var(--couleur-arriere-footer);
+  color: var(--couleur-avant-footer);
 }
 
 h1 {
   font-size: clamp(1.25rem, -2.656rem + 12.5vw, 4.375rem);
-  color: rgba(61, 61, 61, var(--transparence-h1));
   font-weight: 600;
   font-style: normal;
 }
@@ -93,7 +105,6 @@ h2 {
   font-size: clamp(1rem, -1.292rem + 7.333vw, 3.75rem);
   font-weight: 500;
   font-style: normal;
-  color: rgba(3, 1, 1, 0.4);
 }
 
 h3 {
@@ -106,14 +117,12 @@ h3 {
 h4 {
   font-size: clamp(1rem, -0.875rem + 3.333vw, 1.75rem);
   font-weight: 500;
-  color: var(couleur-h4);
   margin-bottom: 10px;
 }
 
 h5 {
   font-size: clamp(1rem, -0.875rem + 2.333vw, 1.25rem);
   font-weight: 500;
-  color: var(--couleur-h5);
   margin-bottom: 8px;
   font-family: "Spicy Rice", serif;
 }
@@ -121,7 +130,6 @@ h5 {
 h6 {
   font-size: clamp(1rem, -0.875rem + 1.333vw, 1rem);
   font-weight: 500;
-  color: var(--couleur-h6);
   margin-bottom: 6px;
   font-family: "Spicy Rice", serif;
 }/*# sourceMappingURL=style.css.map */

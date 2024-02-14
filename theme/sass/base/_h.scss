@@ -5,7 +5,6 @@ h1{
     font-size: clamp(1.25rem, -2.656rem + 12.5vw, 4.375rem);
     // color: rgba(255, 255, 255, .5);
     // color: rgba(0, 0, 0, .5);
-    color: rgba(#3d3d3d , var(--transparence-h1));
     font-weight: 600;
     font-style: normal;
 
@@ -15,7 +14,6 @@ h2{
     font-size: clamp(1rem, -1.292rem + 7.333vw, 3.75rem);
     font-weight: 500;
     font-style: normal;
-    color: rgba(#030101, .4);
 }
 
 h3{
@@ -29,14 +27,12 @@ h3{
 h4 {
     font-size: clamp(1rem, -0.875rem + 3.333vw, 1.75rem);
     font-weight: 500;
-    color: var(couleur-h4);
     margin-bottom: 10px;
 }
 
 h5 {
     font-size: clamp(1rem, -0.875rem + 2.333vw, 1.25rem);
     font-weight: 500;
-    color: var(--couleur-h5);
     margin-bottom: 8px;
     font-family: 'Spicy Rice', serif;
 
@@ -46,7 +42,6 @@ h5 {
 h6 {
     font-size: clamp(1rem, -0.875rem + 1.333vw, 1rem);
     font-weight: 500;
-    color: var(--couleur-h6);
     margin-bottom: 6px;
     font-family: 'Spicy Rice', serif;
 
