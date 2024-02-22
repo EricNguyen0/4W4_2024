@@ -14,4 +14,4 @@
 - Création de liens réagissant aux événements :hover : visited :focus
 
 ## Lien vers Exer1
-- https://github.com/EricNguyen0/4W4_2024/tree/labo2
+- https://github.com/EricNguyen0/4W4_2024/tree/exer1
