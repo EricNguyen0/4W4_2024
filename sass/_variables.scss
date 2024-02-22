@@ -66,5 +66,19 @@
     --couleur-arriere-galerie :  var(--couleur-arriere-evenement);
     
 
+    //couleur monochrome pour bouton
+    --couleur-gradient: linear-gradient(120deg, #ffa073, #26fd80);
+    --couleur-bouton1: #ffa073;
+    --couleur-bouton2: #ff2121;
+
+    --couleur-gradient: linear-gradient(120deg,  #f1ff34, #ff265c8c);
+    --couleur-bouton3: #578cff;
+    --couleur-bouton4: #e957d0de;
+
+    //couleur liens
+    --couleur-lien: #ffa073;
+    --couleur-lien-hover: #26fd80;
+    --couleur-lien-visited: #f1ff34;
+    --focus-outline-color: #ff265c8c;
 
 }
