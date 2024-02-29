@@ -83,23 +83,23 @@
 .button-link:hover {
   background-image: linear-gradient(120deg, var(--couleur-bouton3), var(--couleur-bouton4))
 }
-/* Media Query for Mobile */
+/* Media Query pour Mobile */
 @media only screen and (max-width: 600px) {
   .global > section,
   .global > header,
   .global > footer {
-    padding: 4rem 2rem; /* Adjust padding for smaller screens */
+    padding: 4rem 2rem; 
   }
 
   #entete,
   #footer {
-    min-height: 10vh; /* Adjust min-height for smaller screens */
+    min-height: 10vh; 
   }
 
   .button-link {
-    margin-top: 10px; /* Adjust margin for smaller screens */
-    text-align: center; /* Center text within the button */
-    display: block; /* Make the button a block element for centering */
+    margin-top: 10px; 
+    text-align: center; 
+    display: block; 
     margin-left: auto;
     margin-right: auto;
   }

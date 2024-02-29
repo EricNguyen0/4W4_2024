@@ -1,0 +1,31 @@
+.cours {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1em;
+    font-size: 14px;
+
+}
+
+.carte {
+    flex: 0 1 calc(25% - 1em); 
+    box-sizing: border-box;
+    border: 5px solid var(--couleur-avant-entete);
+    margin-bottom: 1em;
+}
+
+.carte p {
+    margin: 10px 0;
+    padding: 0 10px;
+    color: black;
+}
+.carte h3 {
+    margin: 0;
+    padding: 10px;
+    background-color: var(--couleur-avant-entete);
+    color: var(--couleur-arriere-accueil);
+    font-size: 1.5em;
+    text-align: center;
+}
+
+
