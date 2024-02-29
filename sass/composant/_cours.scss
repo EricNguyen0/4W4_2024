@@ -1,24 +1,29 @@
 .cours {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     gap: 1em;
     font-size: 14px;
-
 }
 
 .carte {
-    flex: 0 1 calc(25% - 1em); 
+    flex: 0 1 calc(25% - 1em);
     box-sizing: border-box;
-    border: 5px solid var(--couleur-avant-entete);
     margin-bottom: 1em;
+    padding: 0 10px;
+    border-width: 4px;
+    border-style: solid;
+    border-image: linear-gradient(to left, var(--couleur-avant-footer), var(--couleur-avant-accueil));
+    border-image-slice: 1;
+    transition: transform 0.3s ease-in-out;
+
 }
 
 .carte p {
     margin: 10px 0;
-    padding: 0 10px;
     color: black;
 }
+
 .carte h3 {
     margin: 0;
     padding: 10px;
@@ -28,4 +33,39 @@
     text-align: center;
 }
 
+h2 {
+    margin-bottom: 20px; 
+}
 
+.carte:hover {
+ 
+    transform: scale(1.05);
+}
+
+.carte h3 {
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.carte:hover h3 {
+    background-color: var(--couleur-avant-footer);
+    color: white;
+}
+
+
+// Media queries
+@media (max-width: 768px) {
+    .carte {
+        flex: 0 1 calc(50% - 1em); 
+    }
+}
+
+@media (max-width: 480px) {
+    .cours {
+        justify-content: center;
+    }
+
+    .carte {
+        flex: 0 1 calc(100% - 1em); 
+        margin-right: 0; 
+    }
+}

@@ -29,9 +29,10 @@
       </div>
       <div id="accueil" class="global">
       <section>
+      <h2>Accueil</h2>
+      <h3>Liste de cours </h3>
         <div class="cours">
-        <h2>Accueil</h2>
-        <h3>Liste de cours(h3)</h3>
+ 
         <?php
         /*
           if(have_posts()){
@@ -43,10 +44,23 @@
           }
         */
         if(have_posts()):
-          while(have_posts()): the_post();?>
+          while(have_posts()): the_post();
+          $titre = get_the_title();
+          $sigle = substr($titre,0,7);
+          $duree = substr($titre, -6, 6);
+          $titreFinale = trim(substr($titre,7), $duree);          
+          
+          ?>
           <div class="carte">
-            <h3><?php the_title(); ?></h3>
-            <p><?php echo wp_trim_words(get_the_content(),25); ?></p>
+            <h3><?php echo $sigle; ?></h3>
+            
+            <h3><?php echo $titreFinale; ?></h3>
+
+            <p><?php echo $duree; ?></p>
+            
+            <p><?php echo wp_trim_words(get_the_content(),30); ?></p>
+
+
         </div>
         <?php endwhile; ?>
         <?php endif; ?>

@@ -1,17 +1,30 @@
-# Exercice #1
-## Reproduire et améliorer la maquette présentée au cours
+# Labo 3
+## Introduction Site Wordpress
+## Auteur du site Eric Nguyen
 
-## Continuer la version du Laboratoire #2
+## Création d'un site WP.
 
 ## Ce que vous devez faire
 
-- Amélioration du dossier Sass
-- Ajout dans style.scss des nouveaux fichiers .scss
-- Utilisations de différentes techniques pour élaborer une palette de couleur (monochrome, complémentaire et triade)
+- Adaptation du thème de exercice #1
+- Création du modèle index.php
+- Création de la branche labo3
+- minimum 3 commits
+- Modifier le Readme.md
+    - Le nom de l'auteur
+    - L'objectif du labo3
+    - Les réalisations
+    - Un lien vers la github-page
 
-- Améliorer l'entête en ajoutant une image en background qui s'enligne horizontalement avec les titres de l'entête
-- Création d'un bouton utilisant les variables, la propriété background-image, linear-gradient. le bouton réagit aux événements :hover et :active
-- Création de liens réagissant aux événements :hover : visited :focus
+- Décompose le titre de chaque cours
+    - Sigle
+    - Durée du cours 
 
-## Lien vers Exer1
-- https://github.com/EricNguyen0/4W4_2024/tree/exer1
+## Ce que qui contiendra
+- Un lien vers la github-page
+- La section galerie affichera la liste des cours du TIM en 4 colonnes.
+- La liste devra s'adapter aux différentes largeurs de fenêtre.
+
+
+## Lien vers Labo3
+- https://github.com/EricNguyen0/4W4_2024/tree/labo3
