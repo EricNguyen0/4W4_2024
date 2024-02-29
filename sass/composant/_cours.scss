@@ -4,6 +4,7 @@
     justify-content: flex-start;
     gap: 1em;
     font-size: 14px;
+    
 }
 
 .carte {
@@ -16,12 +17,12 @@
     border-image: linear-gradient(to left, var(--couleur-avant-footer), var(--couleur-avant-accueil));
     border-image-slice: 1;
     transition: transform 0.3s ease-in-out;
-
 }
 
 .carte p {
     margin: 10px 0;
     color: black;
+    text-align: start;
 }
 
 .carte h3 {

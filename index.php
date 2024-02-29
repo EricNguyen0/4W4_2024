@@ -32,7 +32,6 @@
       <h2>Accueil</h2>
       <h3>Liste de cours </h3>
         <div class="cours">
- 
         <?php
         /*
           if(have_posts()){

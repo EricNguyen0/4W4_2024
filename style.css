@@ -322,6 +322,7 @@ a:active {
 .carte p {
   margin: 10px 0;
   color: black;
+  text-align: start;
 }
 
 .carte h3 {
