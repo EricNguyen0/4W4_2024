@@ -46,18 +46,20 @@
           while(have_posts()): the_post();
           $titre = get_the_title();
           $sigle = substr($titre,0,7);
-          $duree = substr($titre, -6, 6);
-          $titreFinale = trim(substr($titre,7), $duree);          
+          $pos_parenthese = strpos($titre, '(');
+          $duree = substr($titre, $pos_parenthese+1,-1);
+          $titre = substr($titre, 7, $pos_parenthese-7);      
           
           ?>
           <div class="carte">
             <h3><?php echo $sigle; ?></h3>
             
-            <h3><?php echo $titreFinale; ?></h3>
+            <h3><?php echo $titre; ?></h3>
+
+            <p><?php echo wp_trim_words(get_the_content(),25); ?></p>
 
             <p><?php echo $duree; ?></p>
             
-            <p><?php echo wp_trim_words(get_the_content(),30); ?></p>
 
 
         </div>

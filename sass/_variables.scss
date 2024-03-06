@@ -81,4 +81,9 @@
     --couleur-lien-visited: #f1ff34;
     --focus-outline-color: #ff265c8c;
 
+    //couleur arriere plan carte
+    .carte{
+        --_couleur-arriere : hsl(var(--u1), 100%, 90%);
+    }
+
 }
