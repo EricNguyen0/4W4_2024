@@ -50,7 +50,7 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
   --focus-outline-color: #ff265c8c;
 }
 :root .carte {
-  --_couleur-arriere: hsl(var(--u1), 100%, 90%);
+  --_couleur-arriere: hsl(var(--u1), 100%, 85%);
 }
 
 * {
@@ -66,17 +66,21 @@ body {
 
 .global {
   display: flex;
-  min-height: 40vh;
+  justify-content: center;
 }
 
-.global > header {
+.global > .hero {
   flex: 1;
+}
+
+#menu {
+  min-height: 20vh;
 }
 
 .global > section,
 .global > header,
 .global > footer {
-  flex: 0 1 900px;
+  flex: 0 1 1100px;
   padding: 8rem 5rem;
   background-color: rgba(0, 0, 0, var(--transparence-section));
   z-index: 1;
@@ -156,7 +160,7 @@ body {
     margin-right: auto;
   }
 }
-.entete__header {
+.hero {
   background-image: url("images/github-octocat-logo-png-transparent.png");
   background-repeat: no-repeat;
   background-position: 95% 50%;
@@ -319,7 +323,7 @@ a:active {
   padding: 0 10px;
   border-width: 4px;
   border-style: solid;
-  border-image: linear-gradient(to right, var(--couleur-avant-footer), var(--couleur-avant-accueil));
+  border-image: linear-gradient(to left, var(--couleur-avant-footer), var(--couleur-avant-accueil));
   border-image-slice: 1;
   transition: transform 0.3s ease-in-out;
   background-color: var(--_couleur-arriere);
@@ -355,4 +359,32 @@ h2 {
 .carte:hover h3 {
   background-color: var(--couleur-avant-footer);
   color: white;
+}
+
+.menu-principal-container {
+  background-color: var(--couleur-arriere-footer);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-item {
+  flex: 0 0 20rem;
+}
+
+.menu-item a {
+  display: block;
+  padding: 1rem;
+  text-align: center;
+  color: var(--couleur-avant-entete);
+  text-decoration: none;
 }/*# sourceMappingURL=style.css.map */
