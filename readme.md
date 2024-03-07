@@ -17,4 +17,4 @@
     - Créer un template-part qui permettra d'afficher les vagues.
 
 ## Lien vers Labo4
-- https://github.com/EricNguyen0/4W4_2024/tree/labo3
+- https://github.com/EricNguyen0/4W4_2024/tree/labo4
