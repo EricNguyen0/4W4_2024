@@ -46,11 +46,17 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
   --couleur-bouton4: #e957d0de;
   --couleur-lien: #ffa073;
   --couleur-lien-hover: #26fd80;
-  --couleur-lien-visited: #f1ff34;
-  --focus-outline-color: #ff265c8c;
+  --couleur-lien-visited: #ffffff;
+  --focus-outline-color: #8bffe6c0;
 }
 :root .carte {
   --_couleur-arriere: hsl(var(--u1), 100%, 85%);
+}
+:root #entete {
+  --_couleur-arriere: var(--couleur-arriere-accueil);
+}
+:root #galerie {
+  --_couleur-arriere: var(--couleur-arriere-footer);
 }
 
 * {
@@ -74,20 +80,19 @@ body {
 }
 
 #menu {
-  min-height: 20vh;
+  min-height: 5vh;
 }
 
 .global > section,
 .global > header,
 .global > footer {
-  flex: 0 1 1100px;
-  padding: 8rem 5rem;
+  flex: 0 1 1920px;
   background-color: rgba(0, 0, 0, var(--transparence-section));
   z-index: 1;
 }
 
 .global > section {
-  min-width: 80%;
+  min-width: 50%;
   margin-top: 50px;
   align-self: center;
 }
@@ -289,8 +294,8 @@ a:active {
   transform: rotateY(180deg);
 }
 
-.vague2 .shape-fill {
-  fill: #FFFFFF;
+.vague .remplissage {
+  fill: var(--couleur-arriere-accueil);
 }
 
 .diagonal {
@@ -362,29 +367,49 @@ h2 {
 }
 
 .menu-principal-container {
-  background-color: var(--couleur-arriere-footer);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+  background-color: black;
 }
 
 .menu {
+  position: absolute;
   display: flex;
-  justify-content: center;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  list-style-type: none;
+  flex-direction: column;
+  transform: translateX(300%);
 }
 
+@media (min-width: 700px) {
+  .menu {
+    position: static;
+    flex-direction: row;
+    display: flex;
+    transform: translateX(0);
+  }
+}
 .menu-item {
-  flex: 0 0 20rem;
+  flex: 1 0 50px;
 }
 
 .menu-item a {
+  color: #fff;
+}
+
+#burger {
   display: block;
-  padding: 1rem;
-  text-align: center;
-  color: var(--couleur-avant-entete);
-  text-decoration: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+#chk_burger {
+  display: none;
+}
+
+@media (min-width: 700px) {
+  #burger {
+    display: none;
+  }
+}
+#chk_burger:checked ~ .menu {
+  transform: translateY(0);
 }/*# sourceMappingURL=style.css.map */

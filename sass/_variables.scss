@@ -78,12 +78,20 @@
     //couleur liens
     --couleur-lien: #ffa073;
     --couleur-lien-hover: #26fd80;
-    --couleur-lien-visited: #f1ff34;
-    --focus-outline-color: #ff265c8c;
+    --couleur-lien-visited: #ffffff;
+    --focus-outline-color: #8bffe6c0;
 
     //couleur arriere plan carte
     .carte{
         --_couleur-arriere : hsl(var(--u1), 100%, 85%);
+    }
+
+    #entete{
+        --_couleur-arriere : var(--couleur-arriere-accueil);
+
+    }
+    #galerie{
+        --_couleur-arriere : var(--couleur-arriere-footer);
     }
 
 }

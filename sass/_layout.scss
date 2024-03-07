@@ -20,22 +20,21 @@
   }
 
   #menu{
-    min-height: 20vh;
+    min-height: 5vh;
   }  
    
   .global > section,
   .global > header,
   .global > footer{
-    flex: 0 1 1100px;
+    flex: 0 1 1920px;
     // border: 5px groove #3d3d3d;
-    padding : 8rem 5rem;
     background-color: rgba(0,0,0,var(--transparence-section));
     z-index: 1;
    
 
   }
   .global > section{
-    min-width: 80%;
+    min-width: 50%;
     margin-top: 50px;
     align-self: center;
   }
