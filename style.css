@@ -95,6 +95,7 @@ body {
   min-width: 50%;
   margin-top: 50px;
   align-self: center;
+  padding: 3rem 1rem;
 }
 
 #entete, #footer {
@@ -151,14 +152,14 @@ body {
   .global > section,
   .global > header,
   .global > footer {
-    padding: 4rem 2rem;
+    padding: 2rem 2rem;
   }
   #entete,
   #footer {
     min-height: 10vh;
   }
   .button-link {
-    margin-top: 10px;
+    margin-top: 5px;
     text-align: center;
     display: block;
     margin-left: auto;
