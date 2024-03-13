@@ -27,7 +27,8 @@
   .global > header,
   .global > footer
   {
-    flex: 0 1 1920px;
+    flex : 0 1 1920px;
+    padding: 3rem;
     // border: 5px groove #3d3d3d;
     background-color: rgba(0,0,0,var(--transparence-section));
     z-index: 1;
@@ -88,24 +89,24 @@
 .button-link:hover {
   background-image: linear-gradient(120deg, var(--couleur-bouton3), var(--couleur-bouton4))
 }
-/* Media Query pour Mobile */
-@media only screen and (max-width: 600px) {
-  .global > section,
-  .global > header,
-  .global > footer {
-    padding: 2rem 2rem;
-  }
+// /* Media Query pour Mobile */
+// @media only screen and (max-width: 600px) {
+//   .global > section,
+//   .global > header,
+//   .global > footer {
+//     padding: 2rem 2rem;
+//   }
 
-  #entete,
-  #footer {
-    min-height: 10vh; 
-  }
+//   #entete,
+//   #footer {
+//     min-height: 10vh; 
+//   }
 
-  .button-link {
-    margin-top: 5px; 
-    text-align: center; 
-    display: block; 
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
+//   .button-link {
+//     margin-top: 5px; 
+//     text-align: center; 
+//     display: block; 
+//     margin-left: auto;
+//     margin-right: auto;
+//   }
+// }
