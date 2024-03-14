@@ -12,13 +12,11 @@
     box-sizing: border-box;
     flex-direction: column;
     margin-bottom: 1em;
-    padding: 0 10px;
+    padding: 0 5px;
     // justify-content: center;
     // align-items: center;
     border-width: 4px;
     border-style: solid;
-    border-image: linear-gradient(to left, var(--couleur-avant-footer), var(--couleur-avant-accueil));
-    border-image-slice: 1;
     transition: transform 0.3s ease-in-out;
     background-color: var(--_couleur-arriere);
 }

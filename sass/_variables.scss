@@ -1,22 +1,5 @@
 :root{
-    // Version 1
-    // --couleur-arriere-entete: #6d88ff9a;
-    // --couleur-arriere-accueil: #711eb4af;
-    // --couleur-arriere-evenement: #ff7272;
-    // --couleur-arriere-galerie: #0c5bb4d0;
-    // --couleur-arriere-footer: #8affa4;
     
-    // // Niveau de transparence des h //
-    // --transparence-h1: .5;
-        
-    // // Niveau de transparence section //
-    // --transparence-section: .1;
-
-    // // Variables de couleurs pour les h //
-    // --couleur-h4: #333;
-    // --couleur-h5: #555;
-    // --couleur-h6: #777;
-
     //////////////////////////////////////////////
     // 2e version
 
@@ -31,9 +14,9 @@
      
     //La luminosité
     --l-arriere : 30%;
-    --l-avant : 42%;
+    --l-avant : 20%;
      
-    //Couleur arriere plam background color
+    //Couleur arriere plan background color
     // --couleur-arriere-entete : hsl(var(--u1), var(--s-arriere), var(--l-arriere));
     // --couleur-arriere-accueil : hsl(var(--u2), var(--s-arriere), var(--l-arriere)) ;
     // --couleur-arriere-evenement : hsl(var(--u3), var(--s-arriere), var(--l-arriere));
@@ -48,6 +31,7 @@
     --couleur-avant-footer: hsl(var(--u1), var(--s-avant), var(--l-avant));
 
     //couleur monochrome
+    --couleur-arriere-menu: hsl(var(--u1), 100%, 30% );
     --couleur-arriere-entete : hsl(var(--u1),100%, 70%);
     --couleur-arriere-accueil : hsl(var(--u1),100%, 75% ) ;
     // --couleur-arriere-evenement : hsl(var(--u1),100%,80%);
@@ -68,12 +52,12 @@
 
     //couleur monochrome pour bouton
     --couleur-gradient: linear-gradient(120deg, #ffa073, #26fd80);
-    --couleur-bouton1: #ffa073;
-    --couleur-bouton2: #ff2121;
+    --couleur-bouton1: #4639ff;
+    --couleur-bouton2: #288cff;
 
     --couleur-gradient: linear-gradient(120deg,  #f1ff34, #ff265c8c);
-    --couleur-bouton3: #578cff;
-    --couleur-bouton4: #e957d0de;
+    --couleur-bouton3: #82c7ff;
+    --couleur-bouton4: #3714ffde;
 
     //couleur liens
     --couleur-lien: #ffa073;

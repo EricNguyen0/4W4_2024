@@ -22,12 +22,13 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
   --s-arriere: 50%;
   --s-avant: 90%;
   --l-arriere: 30%;
-  --l-avant: 42%;
+  --l-avant: 20%;
   --couleur-avant-entete: hsl(var(--u1), var(--s-avant), var(--l-avant));
   --couleur-avant-accueil: hsl(var(--u2), var(--s-avant), var(--l-avant));
   --couleur-avant-evenement: hsl(var(--u3), var(--s-avant), var(--l-avant));
   --couleur-avant-galerie: hsl(var(--u4), var(--s-avant), var(--l-avant));
   --couleur-avant-footer: hsl(var(--u1), var(--s-avant), var(--l-avant));
+  --couleur-arriere-menu: hsl(var(--u1), 100%, 30% );
   --couleur-arriere-entete: hsl(var(--u1),100%, 70%);
   --couleur-arriere-accueil: hsl(var(--u1),100%, 75% ) ;
   --couleur-arriere-footer: hsl(var(--u1),100%, 70%);
@@ -39,11 +40,11 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
   --couleur-arriere-evenement: var(--couleur-arriere-accueil);
   --couleur-arriere-galerie: var(--couleur-arriere-evenement);
   --couleur-gradient: linear-gradient(120deg, #ffa073, #26fd80);
-  --couleur-bouton1: #ffa073;
-  --couleur-bouton2: #ff2121;
+  --couleur-bouton1: #4639ff;
+  --couleur-bouton2: #288cff;
   --couleur-gradient: linear-gradient(120deg, #f1ff34, #ff265c8c);
-  --couleur-bouton3: #578cff;
-  --couleur-bouton4: #e957d0de;
+  --couleur-bouton3: #82c7ff;
+  --couleur-bouton4: #3714ffde;
   --couleur-lien: #ffa073;
   --couleur-lien-hover: #26fd80;
   --couleur-lien-visited: #ffffff;
@@ -75,59 +76,53 @@ body {
   justify-content: center;
 }
 
-.global > .hero {
-  flex: 1;
-}
-
-#menu {
-  min-height: 5vh;
-}
-
 .global > section,
 .global > header,
 .global > footer {
-  flex: 0 1 1920px;
-  padding: 3rem;
-  background-color: rgba(0, 0, 0, var(--transparence-section));
-  z-index: 1;
+  flex: 0 1 1100px;
+  padding: 3rem 1rem;
+  background-color: rgba(255, 255, 255, var(--transparence-section));
 }
 
-.global > section {
-  min-width: 50%;
-  margin-top: 50px;
-  align-self: center;
-  padding: 3rem 1rem;
+.global > .hero {
+  flex: 1;
 }
 
 #entete, #footer {
   min-height: 20vh;
 }
 
+#menu__entete {
+  position: relative;
+  background-color: var(--couleur-arriere-menu);
+}
+
 #entete {
   background-color: var(--couleur-arriere-entete);
-  color: var(--couleur-avant-entete);
+  color: var(--couleur-entete);
   position: relative;
   min-height: 100vh;
 }
 
 #accueil {
   background-color: var(--couleur-arriere-accueil);
-  color: var(--couleur-avant-accueil);
+  color: var(--couleur-accueil);
 }
 
 #evenement {
   background-color: var(--couleur-arriere-evenement);
-  color: var(--couleur-avant-evenement);
+  color: var(--couleur-evenement);
+  z-index: 1;
 }
 
 #galerie {
   background-color: var(--couleur-arriere-galerie);
-  color: var(--couleur-avant-galerie);
+  color: var(--couleur-galerie);
 }
 
 #footer {
   background-color: var(--couleur-arriere-footer);
-  color: var(--couleur-avant-footer);
+  color: var(--couleur-footer);
   position: relative;
 }
 
@@ -151,8 +146,8 @@ body {
 .hero {
   background-image: url("images/github-octocat-logo-png-transparent.png");
   background-repeat: no-repeat;
-  background-position: 95% 50%;
-  background-size: 220px;
+  background-position: 95% 40%;
+  background-size: 250px;
 }
 
 h1 {
@@ -308,11 +303,9 @@ a:active {
   box-sizing: border-box;
   flex-direction: column;
   margin-bottom: 1em;
-  padding: 0 10px;
+  padding: 0 5px;
   border-width: 4px;
   border-style: solid;
-  border-image: linear-gradient(to left, var(--couleur-avant-footer), var(--couleur-avant-accueil));
-  border-image-slice: 1;
   transition: transform 0.3s ease-in-out;
   background-color: var(--_couleur-arriere);
 }
