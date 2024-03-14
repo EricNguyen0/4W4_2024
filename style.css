@@ -46,8 +46,8 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
   --couleur-bouton3: #82c7ff;
   --couleur-bouton4: #3714ffde;
   --couleur-lien: #202020;
-  --couleur-lien-hover: #627783;
-  --couleur-lien-visited: #ffffff;
+  --couleur-lien-hover: #ffffff;
+  --couleur-lien-visited: #dadada;
   --focus-outline-color: #8bffe6c0;
 }
 :root .carte {
@@ -131,7 +131,7 @@ body {
   display: inline-block;
   padding: 10px 20px;
   background-image: linear-gradient(120deg, var(--couleur-bouton1), var(--couleur-bouton2));
-  color: black;
+  color: var(--couleur-lien-visited);
   text-decoration: none;
   border-radius: 5px;
   transition: background-color 0.3s ease;
@@ -202,8 +202,8 @@ button {
   margin-top: 30px;
   border-radius: 5px;
   border: none;
-  color: azure;
   transition: background-color 0.3s ease, transform 0.3s ease;
+  color: var(--couleur-lien-visited);
 }
 
 button:hover {
@@ -220,10 +220,6 @@ a {
 
 a:hover {
   color: var(--couleur-lien-hover);
-}
-
-a:visited {
-  color: var(--couleur-lien-visited);
 }
 
 .vague {

@@ -7,12 +7,11 @@ button{
     margin-top: 30px;
     border-radius: 5px;
     border: none;
-    color :azure;
     transition: background-color 0.3s ease, transform 0.3s ease;
+    color : var(--couleur-lien-visited);
 
 }
 button:hover{
     background-image: linear-gradient(120deg, var(--couleur-bouton3), var(--couleur-bouton4));
     transform: translateY(-10px);
 }
-
