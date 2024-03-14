@@ -63,7 +63,7 @@
           ?>
         <footer>
           <h2>Footer (h2)</h2>
-          <h5>Réseaux (h5)</h5>
+          <h5>Réseaux (h3)</h5>
           
           <p>Voici le footer</p>
           <blockquote cite="">
