@@ -45,8 +45,8 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
   --couleur-gradient: linear-gradient(120deg, #f1ff34, #ff265c8c);
   --couleur-bouton3: #82c7ff;
   --couleur-bouton4: #3714ffde;
-  --couleur-lien: #ffa073;
-  --couleur-lien-hover: #26fd80;
+  --couleur-lien: #202020;
+  --couleur-lien-hover: #627783;
   --couleur-lien-visited: #ffffff;
   --focus-outline-color: #8bffe6c0;
 }
@@ -81,7 +81,8 @@ body {
 .global > footer {
   flex: 0 1 1100px;
   padding: 3rem 1rem;
-  background-color: rgba(255, 255, 255, var(--transparence-section));
+  background-color: rgba(0, 0, 0, var(--transparence-section));
+  z-index: 1;
 }
 
 .global > .hero {
@@ -89,7 +90,7 @@ body {
 }
 
 #entete, #footer {
-  min-height: 20vh;
+  min-height: 40vh;
 }
 
 #menu__entete {
@@ -112,7 +113,6 @@ body {
 #evenement {
   background-color: var(--couleur-arriere-evenement);
   color: var(--couleur-evenement);
-  z-index: 1;
 }
 
 #galerie {
@@ -215,6 +215,7 @@ a {
   color: var(--couleur-lien);
   text-decoration: none;
   transition: color 0.5s ease-in-out;
+  font-size: medium;
 }
 
 a:hover {
@@ -223,15 +224,6 @@ a:hover {
 
 a:visited {
   color: var(--couleur-lien-visited);
-}
-
-a:focus {
-  outline: 5px solid var(--focus-outline-color);
-  outline-offset: 2px;
-}
-
-a:active {
-  color: var(--couleur-lien-active);
 }
 
 .vague {

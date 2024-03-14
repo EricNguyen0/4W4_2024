@@ -16,7 +16,7 @@
       <div id="accueil" class="global">
       <section>
       <h2>Accueil</h2>
-      <h3>Destination Voyage</h3>
+      <h3>Destinations de voyage</h3>
         <div class="cours">
         <?php
         /*

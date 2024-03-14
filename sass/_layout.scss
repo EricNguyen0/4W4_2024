@@ -22,7 +22,8 @@ font-family: "prompt", sans-serif;
   //border : 1px solid #aaa;
   padding: 3rem 1rem;
   // background-color: rgba(0,0,0,.1);
-  background-color: rgba(255,255,255,var(--transparence-section));
+  background-color: rgba(0,0,0,var(--transparence-section));
+  z-index: 1;
 }
 
 .global > .hero{
@@ -31,7 +32,7 @@ font-family: "prompt", sans-serif;
 }
 
 #entete, #footer {
-  min-height: 20vh;
+  min-height: 40vh;
 }
 
 #menu__entete {
@@ -45,7 +46,6 @@ font-family: "prompt", sans-serif;
   position: relative;
   min-height: 100vh;
 
-
 }
 #accueil{
   background-color: var(--couleur-arriere-accueil);
@@ -54,7 +54,6 @@ font-family: "prompt", sans-serif;
 #evenement{
   background-color: var(--couleur-arriere-evenement);
   color : var(--couleur-evenement);
-  z-index: 1;
 }
 #galerie{
   background-color: var(--couleur-arriere-galerie);
