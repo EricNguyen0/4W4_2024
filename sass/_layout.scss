@@ -12,7 +12,10 @@ font-family: "prompt", sans-serif;
 .global {
   display : flex;
   justify-content: center;
+}
 
+section h3{
+  margin-bottom: 2rem; 
 }
 
 .global > section,

@@ -30,7 +30,9 @@
             <h3><?php the_title(); ?></h3>
 
             <p><?php echo wp_trim_words(get_the_content(),10); ?></p>
-            <a href="<?php the_permalink(); ?>">Suivant</a>
+
+            <?php the_category() ?>
+            <a href="<?php the_permalink(); ?>">Suite</a>
 
         </div>
         <?php endwhile; ?>

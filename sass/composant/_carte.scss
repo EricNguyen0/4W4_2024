@@ -19,7 +19,15 @@
     border-style: solid;
     transition: transform 0.3s ease-in-out;
     background-color: var(--_couleur-arriere);
+   
 }
+
+.post-categories{
+    list-style-type: none;
+    display: flex;
+}
+
+
 
 .carte p {
     margin: 10px 0;
