@@ -290,7 +290,6 @@ a:hover {
 }
 
 .carte {
-  display: flex;
   flex: 1 0 250px;
   box-sizing: border-box;
   flex-direction: column;
@@ -305,6 +304,12 @@ a:hover {
 .post-categories {
   list-style-type: none;
   display: flex;
+  gap: 2rem;
+}
+
+a {
+  margin-top: 5px;
+  font-family: "Prompt", serif;
 }
 
 .carte p {
@@ -339,46 +344,49 @@ h2 {
   color: white;
 }
 
+/* Media queries */
 @media (max-width: 768px) {
+  .cours {
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
   .carte {
     flex: 0 1 calc(50% - 1em);
   }
 }
 @media (max-width: 480px) {
-  .cours {
-    justify-content: center;
-  }
   .carte {
     flex: 0 1 calc(100% - 1em);
-    margin-right: 0;
   }
 }
 .menu-principal-container {
   background-color: var(--couleur-accueil);
 }
-.menu-principal-container .menu {
+
+.menu {
   position: absolute;
   display: flex;
   list-style-type: none;
   flex-direction: column;
-  transform: translateX(300%);
+  /* Remove transform here */
 }
+
 @media (min-width: 700px) {
-  .menu-principal-container .menu {
+  .menu {
     position: static;
     flex-direction: row;
-    display: flex;
-    transform: translateX(0);
   }
 }
-.menu-principal-container .menu-item {
+.menu-item {
   flex: 1 0 50px;
   text-align: center;
   background-color: var(--couleur-accueil);
   margin: 5px;
   padding: 5px;
 }
-.menu-principal-container .menu-item a {
+
+.menu-item a {
   color: #fff;
 }
 
@@ -389,18 +397,18 @@ h2 {
   right: 10px;
 }
 
-#burger {
-  display: block;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-}
+/* Hide the burger menu on larger screens */
 @media (min-width: 700px) {
   #burger {
     display: none;
   }
 }
-
+/* Adjust the transformation based on checkbox state */
 #chk_burger:checked ~ .menu {
   transform: translateX(0);
+}
+
+/* Hide the menu when checkbox is unchecked */
+#chk_burger:not(:checked) ~ .menu {
+  transform: translateX(100%);
 }/*# sourceMappingURL=style.css.map */

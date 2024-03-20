@@ -1,38 +1,33 @@
 .menu-principal-container {
   background-color: var(--couleur-accueil);
-
-  .menu {
-    position: absolute;
-    display: flex;
-    list-style-type: none;
-    flex-direction: column;
-    transform: translateX(300%);
-  }
-  
-  @media (min-width: 700px) {
-    .menu {
-        position: static;
-        flex-direction: row;
-        display: flex;
-        transform: translateX(0);
-    }
-  }
-  
-  .menu-item {
-    flex: 1 0 50px;
-    text-align: center;
-    background-color: var(--couleur-accueil);
-    margin: 5px;
-    padding: 5px;
-    
-  }
-  
-  .menu-item a {
-    color: #fff;
-  }
-
 }
 
+.menu {
+  position: absolute;
+  display: flex;
+  list-style-type: none;
+  flex-direction: column;
+  /* Remove transform here */
+}
+
+@media (min-width: 700px) {
+  .menu {
+    position: static;
+    flex-direction: row;
+  }
+}
+
+.menu-item {
+  flex: 1 0 50px;
+  text-align: center;
+  background-color: var(--couleur-accueil);
+  margin: 5px;
+  padding: 5px;
+}
+
+.menu-item a {
+  color: #fff;
+}
 
 #burger {
   display: block;
@@ -41,16 +36,19 @@
   right: 10px;
 }
 
-#burger {
-  display: block;
-  position: absolute;
-  top: 10px;
-  right : 10px;
-  @media (min-width: 700px){
-    display : none;
+/* Hide the burger menu on larger screens */
+@media (min-width: 700px) {
+  #burger {
+    display: none;
   }
 }
 
+/* Adjust the transformation based on checkbox state */
 #chk_burger:checked ~ .menu {
-  transform : translateX(0);
+  transform: translateX(0);
+}
+
+/* Hide the menu when checkbox is unchecked */
+#chk_burger:not(:checked) ~ .menu {
+  transform: translateX(100%);
 }
