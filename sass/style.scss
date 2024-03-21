@@ -14,7 +14,10 @@ Text Domain: Theme Eric
 /*
 https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
 */
-@import "variables";
+
+// Initialisation des variables
+
+@import "utile/couleurs";
 
 @import "layout";
 

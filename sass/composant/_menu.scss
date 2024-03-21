@@ -1,20 +1,19 @@
-.menu-principal-container {
-  background-color: var(--couleur-accueil);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
 }
 
 .menu {
-  position: absolute;
-  display: flex;
-  list-style-type: none;
-  flex-direction: column;
-  /* Remove transform here */
+  transform: translateX(300%);
+  transition: transform 0.3s ease-in-out;
+  list-style: none;
+  padding: 0;
 }
 
-@media (min-width: 700px) {
-  .menu {
-    position: static;
-    flex-direction: row;
-  }
+.menu li {
+  margin-right: 10px;
 }
 
 .menu-item {
@@ -25,30 +24,63 @@
   padding: 5px;
 }
 
+.menu-item:hover {
+  scale: 1.1;
+}
+
 .menu-item a {
   color: #fff;
 }
 
-#burger {
-  display: block;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-}
-
-/* Hide the burger menu on larger screens */
 @media (min-width: 700px) {
-  #burger {
-    display: none;
+  .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    transform: translateX(0);
   }
 }
 
-/* Adjust the transformation based on checkbox state */
-#chk_burger:checked ~ .menu {
+
+.menu__header {
+  overflow-x: hidden;
+}
+
+#chk_burger:checked ~ .menu__header .menu {
   transform: translateX(0);
 }
 
-/* Hide the menu when checkbox is unchecked */
-#chk_burger:not(:checked) ~ .menu {
-  transform: translateX(100%);
+#chk_burger {
+  display: none;
+}
+
+
+.custom-logo {
+  display: block;
+  margin: 90px auto; 
+  padding-left: 10px;
+}
+
+#burger {
+  display: none;
+}
+
+
+@media (max-width: 700px) {
+  #burger {
+    display: block; 
+    position: fixed; 
+    top: 10px; 
+    left: 10px; 
+    z-index: 999; 
+  }
+}
+
+
+@media (min-width: 700px) {
+  .custom-logo {
+    display: block;
+    margin: 0 auto; 
+  }
 }
