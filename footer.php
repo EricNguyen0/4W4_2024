@@ -4,14 +4,14 @@
             get_template_part('gabarit/vague');
           ?>
         <footer>
-          <h2>Footer (h2)</h2>
-          <h5>Réseaux (h5)</h5>
+          <h2>Découvrez Plus</h2>
+          <h3>Connectez-vous avec Nous</h3>
           
-          <p>Voici le footer</p>
+          <p>Explorez le monde avec notre club de voyage.</p>
           <blockquote cite="">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta a deleniti optio voluptates vitae, cum quas omnis, ea doloremque similique quod fuga illum voluptas? Pariatur quam optio a voluptas ut?</blockquote>
-          <a href="" class="button-link">Footer</a>       
-          <a href="" > Page Suivante</a>
+          Rejoignez-nous pour des voyages inoubliables vers des destinations exotiques.</blockquote>
+          <a href="#" class="button-link">Rejoindre Maintenant</a>       
+          <a href="#">Page Suivante</a>
 
         </footer>
       </div>

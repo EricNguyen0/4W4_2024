@@ -3,9 +3,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap" rel="stylesheet">
 <?php get_header();?>
     
-      <div id="accueil" class="global">
+      <div id="accueil" class="global clr-agencement-primaire">
       <section>
-      <h3>Destinations par catégorie</h3>
+        <h2>Destination de voyages</h2>
+      <h3>Catégories : <?php the_category() ?></h3>
         <div class="cours">
         <?php
      

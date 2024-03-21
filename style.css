@@ -457,6 +457,7 @@ a:hover {
 a {
   margin-top: 5px;
   font-family: "Prompt", serif;
+  font-size: small;
 }
 
 .carte p {
@@ -470,7 +471,7 @@ a {
   padding: 10px;
   background-color: var(--couleur-avant-entete);
   color: var(--couleur-arriere-accueil);
-  font-size: 1.5em;
+  font-size: 1.3em;
   text-align: center;
 }
 
@@ -530,6 +531,7 @@ h2 {
   background-color: var(--couleur-accueil);
   margin: 5px;
   padding: 5px;
+  border-radius: 10px;
 }
 
 .menu-item:hover {
